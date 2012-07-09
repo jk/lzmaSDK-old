@@ -569,7 +569,7 @@ int do7z_extract_entry(char *archivePath, char *entryName, char *entryPath)
   res = SzArEx_Open(&db, &lookStream.s, &allocImp, &allocTempImp);
   if (res == SZ_OK)
   {
-    int listCommand = 0, testCommand = 0, extractCommand = 1, fullPaths = 0;
+    int listCommand = 0, testCommand = 0, extractCommand = 1, fullPaths = 1;
 /*
     char *command = args[1];
     int listCommand = 0, testCommand = 0, extractCommand = 0, fullPaths = 0;
