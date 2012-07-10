@@ -19,7 +19,7 @@ int do7z_extract_entry(char *archivePath, char *entryName, char *entryPath);
   NSAssert(archivePath, @"archivePath");
   NSAssert(tmpDirName, @"tmpDirName");
   
-	NSString *tmpDir = NSTemporaryDirectory();    
+	NSString *tmpDir = @"/";   
   BOOL worked, isDir, existsAlready;
   
   NSString *myTmpDir = [tmpDir stringByAppendingPathComponent:tmpDirName];
