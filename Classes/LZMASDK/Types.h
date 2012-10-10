@@ -61,7 +61,9 @@ typedef long Int32;
 typedef unsigned long UInt32;
 #else
 typedef int Int32;
+#ifndef __MACTYPES__
 typedef unsigned int UInt32;
+#endif
 #endif
 
 #ifdef _SZ_NO_INT_64
