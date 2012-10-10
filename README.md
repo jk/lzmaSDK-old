@@ -6,6 +6,8 @@ This repository is a clone of Mo DeJong's work and is here to be integrated in C
 
 This repository contains the LZMA SDK customized for an embedded system (iPhone/iOS). Only the file extraction logic was included, all code related to creating compressed streams was removed. Also, CRC validation was removed to improve performance. This is based on **lzma release 9.21 beta**.
 
+**Warning:** There is an issue with the C version of lzma which is used here. Huge archives need a lot of RAM while they are extracted. To lean more, head over to [StackOverflow](http://stackoverflow.com/a/12668533/408150).
+
 Embedded version does not need exe branch predictors:
 
 * Bra.c
